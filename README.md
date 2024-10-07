@@ -43,19 +43,25 @@ This project is part of the COMP.SE.140 course, designed to provide hands-on exp
 
 2. **Build and Start the Services**:
    ```bash
-   docker-compose up --build
-   
+   docker compose up --build
+ ![output1](images/1.png)
    
 3. **Build and Start the Services**:
    - Wait for approximately 10 seconds for the services to initialize.
    - Use curl to test the HTTP server:
    ```bash
    curl localhost:8199
+  ![output2](images/2.png)
 
+- To stop the server: 
+  ```bash
+   press Ctrl+C
+ ![output3](images/3.png)
+  
 4. **Stop the Services**:
    ```bash
-   docker-compose down
-
+   docker compose down
+  ![output4](images/4.png)
 ### Additional task:
 ## Continuous Integration and Deployment
 In this project, we have established a Continuous Integration and Deployment (CI/CD) pipeline utilizing GitHub Actions . This pipeline is designed to automate the process of building Docker images for our services and subsequently pushing them to [Docker Hub](https://hub.docker.com/u/sadidur). This automation is triggered whenever changes are committed to specified branches within our repository.
