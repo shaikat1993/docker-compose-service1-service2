@@ -1,5 +1,8 @@
 # Docker Compose Hands-On Exercise
 
+## Note
+Although there is a restriction on not including extra files in the repository, I need to add .github folder for Continuous Integration and Deployment action and to make the README file more visual, I need to add images into the README.md File. 
+
 ## Overview
 
 This project is part of the COMP.SE.140 course, designed to provide hands-on experience with Docker and Docker Compose. The goal is to create a system of two interworking services, each implemented in a different programming language, that can be started and stopped together. The services collect system information from their respective containers and communicate with each other to provide a comprehensive response to HTTP requests.
