@@ -62,6 +62,11 @@ This project is part of the COMP.SE.140 course, designed to provide hands-on exp
    curl localhost:8199
   ![output2](images/2.png)
 
+  **If you face any issue like Not supported URI**
+  - then try using `host.docker.internal` instead of `localhost` in your curl command:
+    ```bash
+    curl http://host.docker.internal:8199
+
 - To stop the server: 
   ```bash
    press Ctrl+C
