@@ -9,10 +9,10 @@ function getSystemInfo() {
     const diskSpace     = execSync("df -h /").toString();
     const uptime        = execSync("uptime -p").toString();
     return {
-        ip_address: ipAddress,
-        processes: processes,
-        disk_space: diskSpace,
-        uptime: uptime
+        ip_address  : ipAddress,
+        processes   : processes,
+        disk_space  : diskSpace,
+        uptime      : uptime
     };
 }
 

@@ -7,15 +7,15 @@ import requests
 app = Flask(__name__)
 
 def get_system_info():
-    ip_address = subprocess.getoutput("hostname -I").strip()
-    processes = subprocess.getoutput("ps -ax")
-    disk_space = subprocess.getoutput("df -h /")
-    uptime = subprocess.getoutput("uptime -p")
+    ip_address  = subprocess.getoutput("hostname -I").strip()
+    processes   = subprocess.getoutput("ps -ax")
+    disk_space  = subprocess.getoutput("df -h /")
+    uptime      = subprocess.getoutput("uptime -p")
     return {
-        "ip_address": ip_address,
-        "processes": processes,
-        "disk_space": disk_space,
-        "uptime": uptime
+        "ip_address"    : ip_address,
+        "processes"     : processes,
+        "disk_space"    : disk_space,
+        "uptime"        : uptime
     }
 
 @app.route("/", methods=["GET"])
