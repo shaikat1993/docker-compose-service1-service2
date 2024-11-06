@@ -29,4 +29,4 @@ Here are some key insights:
 So in my view, Docker containers introduce an intelligent way to 
 run applications in isolated environments while tapping into the strengths of the host machine. 
 Basically, this blend of separation yet shared resources makes containers efficient and versatile, 
-hence giving a powerful base in modern application development.
+hence giving a powerful base in modern application development. 
